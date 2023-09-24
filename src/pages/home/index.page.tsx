@@ -17,7 +17,7 @@ export default function Home() {
       <Container>
         <Sidebar />
         <Main>
-          <Header title="Início" icon={<ChartLineUp />} variant="primary" />
+          <Header title="Início" icon={<ChartLineUp />} />
         </Main>
       </Container>
     </>

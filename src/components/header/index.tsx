@@ -1,21 +1,27 @@
-import { CaretLeft } from '@phosphor-icons/react'
-import { Container, IconContainer, Title } from './styles'
 import { ReactNode } from 'react'
+import { BackButton, BackIcon, Container, IconContainer, Title } from './styles'
 
 interface HeaderProps {
   title: string
   icon: ReactNode
-  variant?: 'primary' | 'secondary'
+  variant?: 'title' | 'back'
 }
 
-export function Header({ title, icon, variant = 'primary' }: HeaderProps) {
-  title = variant === 'secondary' ? 'Voltar' : title
-  icon = variant === 'secondary' ? <CaretLeft /> : icon
+export function Header({ title, icon, variant = 'title' }: HeaderProps) {
+  if (variant === 'title') {
+    return (
+      <Container>
+        <IconContainer>{icon}</IconContainer>
+        <Title>{title}</Title>
+      </Container>
+    )
+  }
 
   return (
     <Container>
-      <IconContainer variant={variant}>{icon}</IconContainer>
-      <Title variant={variant}>{title}</Title>
+      <BackButton>
+        <BackIcon /> Voltar
+      </BackButton>
     </Container>
   )
 }
