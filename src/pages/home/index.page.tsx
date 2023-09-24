@@ -3,6 +3,7 @@ import { Main } from '@/components/main'
 import { Sidebar } from '@/components/sidebar'
 import { ChartLineUp } from '@phosphor-icons/react/dist/ssr'
 import Head from 'next/head'
+import { BookList } from './components/BookList'
 import { Container } from './styles'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Sidebar />
         <Main>
           <Header title="Início" icon={<ChartLineUp />} />
+          <BookList />
         </Main>
       </Container>
     </>

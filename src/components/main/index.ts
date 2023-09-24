@@ -5,4 +5,5 @@ export const Main = styled('main', {
   flexDirection: 'column',
   paddingLeft: '6rem',
   paddingTop: '4.5625rem',
+  gap: '2.5rem',
 })
