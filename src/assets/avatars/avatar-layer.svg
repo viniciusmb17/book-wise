@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="url(#pattern0)" stroke="url(#paint0_linear_576_4969)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_576_4969" transform="scale(0.000976562)"/>
+</pattern>
+<linearGradient id="paint0_linear_576_4969" x1="20.2273" y1="2.96488e-06" x2="20.2273" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7FD1CC"/>
+<stop offset="1" stop-color="#9694F5"/>
+</linearGradient>
+</defs>
+</svg>
