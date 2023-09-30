@@ -5,10 +5,21 @@ export const Container = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   gap: '$4',
+})
 
-  paddingBottom: '16px',
+export const Title = styled('span', {
+  fontSize: '$sm',
+  fontWeight: '$regular',
+  lineHeight: '$base',
+  color: '$gray100',
+})
 
-  maxHeight: 'calc(100vh - 146px)',
+export const CommentCards = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '$3',
+
+  maxHeight: 'calc(100vh - 186px)',
   overflowY: 'auto',
 
   '&::-webkit-scrollbar': {
@@ -23,17 +34,6 @@ export const Container = styled('section', {
       background: '$gray500',
     },
   },
-})
 
-export const Title = styled('span', {
-  fontSize: '$sm',
-  fontWeight: '$regular',
-  lineHeight: '$base',
-  color: '$gray100',
-})
-
-export const CommentCards = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '$3',
+  paddingBottom: '16px',
 })
