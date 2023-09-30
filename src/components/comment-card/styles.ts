@@ -1,4 +1,6 @@
 import { styled } from '@/styles/stitches.config'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export const Container = styled('div', {
   display: 'flex',
@@ -46,4 +48,56 @@ export const Avatar = styled('img', {
   borderRadius: '999px',
 })
 
-export const Content = styled('article')
+export const Content = styled('article', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '20px',
+  alignSelf: 'stretch',
+})
+
+export const BookThumb = styled(Image, {
+  borderRadius: '$sm',
+  maxWidth: '6.75rem',
+})
+
+export const BookHeader = styled('header', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  alignSelf: 'stretch',
+})
+
+export const BookInfo = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  gap: '$5',
+  flex: '1 0 0',
+})
+
+export const BookTitle = styled('span', {
+  color: '$gray100',
+  fontSize: '$md',
+  fontWeight: '$bold',
+  lineHeight: '$short',
+})
+
+export const BookAuthor = styled('span', {
+  color: '$gray400',
+  fontSize: '$sm',
+  fontWeight: '$regular',
+  lineHeight: '$base',
+})
+
+export const BookSummary = styled('span', {
+  color: '$gray300',
+  fontSize: '$sm',
+  lineHeight: '$base',
+})
+
+export const SeeMoreInfo = styled(Link, {
+  all: 'unset',
+  cursor: 'pointer',
+  fontWeight: '$bold',
+  color: '$purple100',
+})
