@@ -9,7 +9,9 @@ export const Container = styled('section', {
   height: '37.625rem',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '$4',
+  rowGap: '$4',
+
+  alignSelf: 'stretch',
 })
 
 export const Header = styled('header', {
@@ -37,4 +39,11 @@ export const SeeMore = styled(Link, {
   gap: '$2',
   alignItems: 'center',
   justifyContent: 'center',
+})
+
+export const ListBookCards = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '$3',
+  alignSelf: 'stretch',
 })

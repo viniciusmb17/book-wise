@@ -6,4 +6,6 @@ export const SideSection = styled('section', {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '$4',
+  maxWidth: 'fit-content',
+  paddingLeft: '4rem',
 })

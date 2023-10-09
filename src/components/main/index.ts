@@ -7,4 +7,5 @@ export const Main = styled('main', {
   paddingLeft: '6rem',
   paddingTop: '4.5625rem',
   gap: '2.5rem',
+  maxWidth: 'fit-content',
 })
